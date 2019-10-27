@@ -1,5 +1,11 @@
+import "../styles/styles.scss";
+
 function Home() {
-  return <div>Welcome to Next.js!</div>;
+  return (
+    <div>
+      <h4>ramisal</h4>
+    </div>
+  );
 }
 
 export default Home;

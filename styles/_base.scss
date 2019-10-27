@@ -1,0 +1,28 @@
+// @import url(//fonts.googleapis.com/css?family=Material+Icons|Kanit:400,300,500,700,900|Roboto+Slab:300,400,700|Open+Sans:400italic,700italic,300,400,700|Catamaran:400,700,100|Montserrat:400,700);
+
+// Font Variables
+$source-sans: "Source Sans Pro", sans-serif;
+$source-serif: "Source Serif Pro", serif;
+$base-font: $source-sans;
+$heading-font: $source-serif;
+
+$base-font-size: 16px;
+
+$content-max-width: 1440px;
+
+$easeInQuart: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+$easeOutQuart: cubic-bezier(0.165, 0.84, 0.44, 1);
+
+// Colors
+$blue: #00a2ff;
+$red: #ec5544;
+$pink: #ff5f6d;
+$green: #38a173;
+$lgreen: #81bf33;
+$torque: #35f3d6;
+$yellow: #ffb771;
+$orange: #ff7b00;
+
+$base-color: #030303;
+$inverse-color: #fff;
+$gray: #444;
