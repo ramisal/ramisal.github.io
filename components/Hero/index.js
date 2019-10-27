@@ -18,6 +18,7 @@ export default function Header() {
       </section>
       <section className="hero__text">
         <h1>Converting designs into expiriances</h1>
+        <p>Since 2012</p>
       </section>
     </article>
   );
