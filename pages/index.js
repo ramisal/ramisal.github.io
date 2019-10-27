@@ -1,10 +1,14 @@
 import "../styles/styles.scss";
 
+import Header from "../components/Header";
+import Hero from "../components/Hero";
+
 function Home() {
   return (
-    <div>
-      <h4>ramisal</h4>
-    </div>
+    <main>
+      <Header />
+      <Hero />
+    </main>
   );
 }
 

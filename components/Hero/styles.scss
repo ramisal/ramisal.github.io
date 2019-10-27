@@ -1,0 +1,46 @@
+@import "../../styles/_base";
+
+.hero {
+  position: relative;
+  &__text {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+  h1 {
+    max-width: 720px;
+    font-size: 60px;
+  }
+  &__particles {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 10;
+      background-image: linear-gradient(
+        to bottom,
+        $base-color,
+        $base-color,
+        transparent
+      );
+    }
+    & > div {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
