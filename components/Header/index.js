@@ -1,4 +1,4 @@
-import "./styles.scss";
+import './styles.scss'
 
 export default function Header() {
   return (
@@ -12,5 +12,5 @@ export default function Header() {
         <p>at Novanet, Mumbai, India</p>
       </section>
     </header>
-  );
+  )
 }

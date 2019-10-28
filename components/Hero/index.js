@@ -1,6 +1,6 @@
-import Particles from "react-particles-js";
+import Particles from 'react-particles-js'
 
-import "./styles.scss";
+import './styles.scss'
 
 export default function Header() {
   return (
@@ -21,5 +21,5 @@ export default function Header() {
         <p>Since 2012</p>
       </section>
     </article>
-  );
+  )
 }
