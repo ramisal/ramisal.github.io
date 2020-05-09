@@ -1,5 +1,0 @@
-{
-    "javascript.format.insertSpaceAfterCommaDelimiter": false,
-    "prettier.singleQuote": true,
-    "prettier.semi": false
-}

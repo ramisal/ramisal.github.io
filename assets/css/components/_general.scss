@@ -1,0 +1,51 @@
+/****************/
+/***** main *****/
+/****************/
+
+.main-container {
+  min-height: 100vh;
+  padding: 180px 60px;
+  position: relative;
+  background: red;
+}
+
+/*******************/
+/***** landing *****/
+/*******************/
+
+.landing-section {
+  margin: 0 0 90px;
+}
+
+.landing-text {
+  line-height: 1;
+  text-align: center;
+  h1 {
+    margin: 0;
+    text-transform: uppercase;
+  }
+  p {
+    margin: 5px 0 0;
+    color: $gray;
+  }
+}
+
+/*******************/
+/***** footer *****/
+/*******************/
+.footer {
+  position: absolute;
+  left: 50%;
+  bottom: 90px;
+  transform: translate(-50%, 50%);
+  color: $gray;
+  p {
+    margin: 0;
+  }
+  a {
+    @include transition();
+    &:hover {
+      color: $gray_dark;
+    }
+  }
+}
