@@ -124,19 +124,8 @@ h6 {
     flex-wrap: wrap; }
 
 /***** components *****/
-/****************/
-/***** main *****/
-/****************/
-.main-container {
-  min-height: 100vh;
-  padding: 120px 60px 180px;
-  position: relative; }
-
-/*******************/
-/***** landing *****/
-/*******************/
 .landing-section {
-  margin: 0 0 90px; }
+  margin: 0 0 3rem; }
 
 .landing-text {
   max-width: 960px;
@@ -155,27 +144,34 @@ h6 {
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 400; }
 
+/****************/
+/***** main *****/
+/****************/
+.main-container {
+  min-height: 100vh;
+  padding: 6rem 2rem 8rem;
+  position: relative; }
+
 /******************/
 /***** footer *****/
 /******************/
 .footer {
-  position: absolute;
-  left: 50%;
-  bottom: 90px;
-  transform: translate(-50%, 50%);
-  color: #999999; }
+  margin: 5rem 0 0;
+  text-align: center; }
   .footer p {
     margin: 0; }
   .footer a {
+    margin: 0 0.25rem;
+    font-weight: 600;
     transition: all 0.3s ease-in-out; }
     .footer a:hover {
-      color: #4d4d4d; }
+      text-decoration: none; }
 
 /*******************/
 /***** section *****/
 /*******************/
 .section {
-  margin: 120px 0 0;
+  margin: 5rem 0 0;
   text-align: center; }
   .section h5 {
     margin: 0 0 3rem;
@@ -291,3 +287,25 @@ h6 {
     top: 100%; }
   .date.end {
     top: 0; }
+
+.writing {
+  max-width: 960px;
+  margin: auto; }
+
+.post {
+  display: block;
+  padding: 2rem;
+  text-align: left;
+  border: 1px #999999 solid;
+  border-radius: 0.5rem;
+  text-decoration: none; }
+  .post + .post {
+    margin-top: 1rem; }
+  .post h3 {
+    margin: -0.25em 0 0; }
+  .post p {
+    margin: 10px 0 0; }
+  .post:hover {
+    border-color: #999999; }
+    .post:hover h3 {
+      text-decoration: underline; }

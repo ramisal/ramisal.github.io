@@ -1,0 +1,28 @@
+.writing {
+  max-width: 960px;
+  margin: auto;
+}
+
+.post {
+  display: block;
+  padding: 2rem;
+  text-align: left;
+  border: 1px $gray solid;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  & + .post {
+    margin-top: 1rem;
+  }
+  h3 {
+    margin: -0.25em 0 0;
+  }
+  p {
+    margin: 10px 0 0;
+  }
+  &:hover {
+    border-color: $gray;
+    h3 {
+      text-decoration: underline;
+    }
+  }
+}
