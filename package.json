@@ -1,16 +1,17 @@
 {
-  "dependencies": {
-    "@zeit/next-sass": "^1.0.1",
-    "next": "^9.1.1",
-    "node-sass": "^4.13.0",
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0"
-  },
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My personal portfolio",
+  "main": "index.html",
+  "repository": "git@github.com:ramisal/portfolio.git",
+  "author": "demonofthemist <rohan.misal8@gmail.com>",
+  "license": "MIT",
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start",
-    "export": "next export",
-    "deploy": "next build && next export && git add out/ && git commit -m \"Deploy gh-pages\" && git subtree push --prefix out origin gh-pages"
+    "start": "python -m SimpleHTTPServer"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-less": "^4.0.1",
+    "gulp-sass": "^4.1.0"
   }
 }

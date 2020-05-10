@@ -1,0 +1,63 @@
+/***** reset *****/
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $base_font;
+  -webkit-font-smoothing: antialiased;
+  font-size: 24px;
+  line-height: 1.66;
+  color: $base_color;
+  background: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  outline: 0;
+  cursor: pointer;
+}
+
+ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  //   font-family: $head_font;
+  line-height: 1.33;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 1.75rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+h5 {
+  font-size: 1.25rem;
+}
+h6 {
+  font-size: 0.75rem;
+}

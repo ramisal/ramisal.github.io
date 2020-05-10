@@ -1,0 +1,39 @@
+/****************/
+/***** main *****/
+/****************/
+.main-container {
+  min-height: 100vh;
+  padding: 6rem 2rem 8rem;
+  position: relative;
+}
+
+/******************/
+/***** footer *****/
+/******************/
+.footer {
+  margin: 5rem 0 0;
+  text-align: center;
+  p {
+    margin: 0;
+  }
+  a {
+    margin: 0 0.25rem;
+    font-weight: 600;
+    @include transition();
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+/*******************/
+/***** section *****/
+/*******************/
+.section {
+  margin: 5rem 0 0;
+  text-align: center;
+  h5 {
+    margin: 0 0 3rem;
+    color: $gray_dark;
+  }
+}

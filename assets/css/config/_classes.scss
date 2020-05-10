@@ -1,0 +1,67 @@
+/****************/
+/***** text *****/
+/****************/
+
+.light {
+	font-weight: 300 !important;
+}
+.regular {
+	font-weight: 400 !important;
+}
+.bold {
+	font-weight: 700 !important;
+}
+
+
+.caps {
+	text-transform: capitalize;
+}
+.lower {
+	text-transform: lowercase;
+}
+.upper {
+	text-transform: uppercase;
+}
+
+.ellipsis {
+	&,
+	& > * {
+		display: block;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+}
+
+
+
+/************/
+/*** flex ***/
+/************/
+
+.flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	& > *{
+		min-width: 0;
+	}
+	&__center {
+		justify-content: center;
+	}
+	&__end {
+		justify-content: flex-end;
+	}
+	&__start {
+		justify-content: flex-start;
+	}
+	&__top {
+		align-items: flex-start;
+	}
+	&__bottom {
+		align-items: flex-end;
+	}
+	&__wrap {
+		flex-wrap: wrap;
+	}
+}
