@@ -16,19 +16,15 @@
   p {
     margin: 1.5rem 0 0;
     small {
-      display: inline-flex;
-      margin: 0 0 0.5rem;
       color: $gray;
-      font-size: 0.5em;
-    }
-    span {
-      border: 1px $gray solid;
-      padding: 0.25rem 1rem;
-      border-radius: 2rem;
+      font-size: 0.75em;
     }
     a {
       display: inline-flex;
       margin: 1.5rem 0 0;
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 }

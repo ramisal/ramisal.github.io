@@ -128,7 +128,7 @@ h6 {
   margin: 0 0 3rem; }
 
 .landing-text {
-  max-width: 960px;
+  max-width: 1080px;
   margin: auto;
   line-height: 1;
   text-align: center; }
@@ -193,17 +193,13 @@ h6 {
   .featured-item p {
     margin: 1.5rem 0 0; }
     .featured-item p small {
-      display: inline-flex;
-      margin: 0 0 0.5rem;
       color: #999999;
-      font-size: 0.5em; }
-    .featured-item p span {
-      border: 1px #999999 solid;
-      padding: 0.25rem 1rem;
-      border-radius: 2rem; }
+      font-size: 0.75em; }
     .featured-item p a {
       display: inline-flex;
       margin: 1.5rem 0 0; }
+      .featured-item p a:hover {
+        text-decoration: none; }
 
 .companies {
   max-width: 1080px;
@@ -250,6 +246,8 @@ h6 {
     margin: 0 0 0.5em; }
   .company p {
     margin: 0; }
+  .company a:hover {
+    text-decoration: none; }
 
 .date {
   padding: 0 1rem;
@@ -302,10 +300,11 @@ h6 {
   .post + .post {
     margin-top: 1rem; }
   .post h3 {
-    margin: -0.25em 0 0; }
+    margin: -0.25em 0 0;
+    text-decoration: underline; }
   .post p {
     margin: 10px 0 0; }
   .post:hover {
     border-color: #999999; }
     .post:hover h3 {
-      text-decoration: underline; }
+      text-decoration: none; }
