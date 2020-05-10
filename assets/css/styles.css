@@ -12,12 +12,13 @@
 /***** easings *****/
 /*******************/
 /***** reset *****/
+html,
 body {
   margin: 0;
   padding: 0;
   font-family: "Source Sans Pro", sans-serif;
   -webkit-font-smoothing: antialiased;
-  font-size: 16px;
+  font-size: 24px;
   line-height: 1.66;
   color: #1d1d1d;
   background: #fff; }
@@ -39,26 +40,32 @@ ul {
 img {
   max-width: 100%; }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Source Serif Pro", serif; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.33; }
 
 h1 {
-  font-size: 48px; }
+  font-size: 3rem;
+  font-weight: 900; }
 
 h2 {
-  font-size: 36px; }
+  font-size: 2.5rem; }
 
 h3 {
-  font-size: 27px; }
+  font-size: 1.75rem; }
 
 h4 {
-  font-size: 20px; }
+  font-size: 1.5rem; }
 
 h5 {
-  font-size: 12rem; }
+  font-size: 1.25rem; }
 
 h6 {
-  font-size: 10px; }
+  font-size: 0.75rem; }
 
 /***********************/
 /***** transitions *****/
@@ -122,7 +129,7 @@ h6 {
 /****************/
 .main-container {
   min-height: 100vh;
-  padding: 180px 60px;
+  padding: 120px 60px 180px;
   position: relative; }
 
 /*******************/
@@ -132,18 +139,25 @@ h6 {
   margin: 0 0 90px; }
 
 .landing-text {
+  max-width: 960px;
+  margin: auto;
   line-height: 1;
   text-align: center; }
   .landing-text h1 {
     margin: 0;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    letter-spacing: 5px; }
   .landing-text p {
-    margin: 5px 0 0;
+    margin: 0 0 2rem;
     color: #999999; }
+  .landing-text h3 {
+    margin: 0;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400; }
 
-/*******************/
+/******************/
 /***** footer *****/
-/*******************/
+/******************/
 .footer {
   position: absolute;
   left: 50%;
@@ -156,3 +170,124 @@ h6 {
     transition: all 0.3s ease-in-out; }
     .footer a:hover {
       color: #4d4d4d; }
+
+/*******************/
+/***** section *****/
+/*******************/
+.section {
+  margin: 120px 0 0;
+  text-align: center; }
+  .section h5 {
+    margin: 0 0 3rem;
+    color: #4d4d4d; }
+
+.featured {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  max-width: 840px;
+  margin: auto; }
+
+.featured-item {
+  padding: 2rem;
+  border: 1px #999999 solid;
+  border-radius: 0.5rem; }
+  .featured-item img {
+    height: 40px; }
+  .featured-item p {
+    margin: 1.5rem 0 0; }
+    .featured-item p small {
+      display: inline-flex;
+      margin: 0 0 0.5rem;
+      color: #999999;
+      font-size: 0.5em; }
+    .featured-item p span {
+      border: 1px #999999 solid;
+      padding: 0.25rem 1rem;
+      border-radius: 2rem; }
+    .featured-item p a {
+      display: inline-flex;
+      margin: 1.5rem 0 0; }
+
+.companies {
+  max-width: 1080px;
+  margin: auto;
+  padding: 0.5em 0 0;
+  position: relative; }
+  .companies:before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background: #e0e0e0; }
+
+.company {
+  padding: 3rem 0;
+  position: relative; }
+  .company:before, .company:after {
+    content: "";
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #e0e0e0;
+    border-radius: 1rem; }
+  .company:before {
+    top: 0; }
+  .company:after {
+    top: 100%; }
+  .company.left-aligned {
+    padding-left: calc(50% + 2rem);
+    text-align: left; }
+  .company.right-aligned {
+    padding-right: calc(50% + 2rem);
+    text-align: right; }
+  .company h3 {
+    line-height: 1;
+    margin: 0 0 0.25em; }
+  .company h5 {
+    margin: 0 0 0.5em; }
+  .company p {
+    margin: 0; }
+
+.date {
+  padding: 0 1rem;
+  position: absolute;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  border: 1px #e0e0e0 solid;
+  border-radius: 0.25rem; }
+  .date:before {
+    content: "";
+    display: block;
+    width: 0.9rem;
+    height: 0.9rem;
+    position: absolute;
+    top: 50%;
+    border: 1px #e0e0e0 solid;
+    transform: translate(-50%, -50%) rotateZ(45deg); }
+  .date.left {
+    right: 50%;
+    margin-right: 2rem;
+    border-right: 0; }
+    .date.left:before {
+      left: 100%;
+      border-width: 1px 1px 0 0;
+      margin-left: -1px; }
+  .date.right {
+    left: 50%;
+    margin-left: 2rem;
+    border-left: 0; }
+    .date.right:before {
+      left: 0;
+      border-width: 0 0 1px 1px;
+      margin-left: 1px; }
+  .date.start {
+    top: 100%; }
+  .date.end {
+    top: 0; }

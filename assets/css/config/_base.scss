@@ -2,10 +2,8 @@
 /***** fonts *****/
 /*****************/
 
-$head_font: 'Source Serif Pro', serif;
-$base_font: 'Source Sans Pro', sans-serif;
-
-
+$head_font: "Source Serif Pro", serif;
+$base_font: "Source Sans Pro", sans-serif;
 
 /******************/
 /***** colros *****/
@@ -17,8 +15,6 @@ $gray: #999999;
 $gray_dark: #4d4d4d;
 $gray_light: #e0e0e0;
 
-
-
 /*****************/
 /***** width *****/
 /*****************/
@@ -28,12 +24,9 @@ $experiment_width_regular: 1000px;
 $experiment_width_medium: 750px;
 $experiment_width_small: 500px;
 
-
-
 /*******************/
 /***** easings *****/
 /*******************/
 
 $easeInQuart: cubic-bezier(0.895, 0.03, 0.685, 0.22);
 $easeOutQuart: cubic-bezier(0.165, 0.84, 0.44, 1);
-

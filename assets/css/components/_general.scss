@@ -1,37 +1,43 @@
 /****************/
 /***** main *****/
 /****************/
-
 .main-container {
   min-height: 100vh;
-  padding: 180px 60px;
+  padding: 120px 60px 180px;
   position: relative;
 }
 
 /*******************/
 /***** landing *****/
 /*******************/
-
 .landing-section {
   margin: 0 0 90px;
 }
 
 .landing-text {
+  max-width: 960px;
+  margin: auto;
   line-height: 1;
   text-align: center;
   h1 {
     margin: 0;
     text-transform: uppercase;
+    letter-spacing: 5px;
   }
   p {
-    margin: 5px 0 0;
+    margin: 0 0 2rem;
     color: $gray;
+  }
+  h3 {
+    margin: 0;
+    font-family: $base_font;
+    font-weight: 400;
   }
 }
 
-/*******************/
+/******************/
 /***** footer *****/
-/*******************/
+/******************/
 .footer {
   position: absolute;
   left: 50%;
@@ -46,5 +52,17 @@
     &:hover {
       color: $gray_dark;
     }
+  }
+}
+
+/*******************/
+/***** section *****/
+/*******************/
+.section {
+  margin: 120px 0 0;
+  text-align: center;
+  h5 {
+    margin: 0 0 3rem;
+    color: $gray_dark;
   }
 }
