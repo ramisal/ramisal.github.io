@@ -59,6 +59,21 @@
       text-decoration: none;
     }
   }
+  @include forwidth(540) {
+    &.left-aligned,
+    &.right-aligned {
+      padding: 4.5rem 0;
+      text-align: center;
+    }
+    div {
+      padding: 0.5rem 0;
+      background: #fff;
+      position: relative;
+    }
+    p {
+      margin: 0 -0.25rem;
+    }
+  }
 }
 
 .date {
@@ -103,5 +118,23 @@
   }
   &.end {
     top: 0;
+  }
+  @include forwidth(540) {
+    left: 50% !important;
+    right: auto !important;
+    margin: 0 !important;
+    padding: 3px 0;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border: 0;
+    &.start {
+      top: calc(100% + 2rem);
+    }
+    &.end {
+      top: -2rem;
+    }
+    &:before {
+      display: none;
+    }
   }
 }

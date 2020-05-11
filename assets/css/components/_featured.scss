@@ -4,6 +4,16 @@
   grid-gap: 2rem;
   max-width: 840px;
   margin: auto;
+  @include forwidth(720, 641) {
+    grid-gap: 1rem;
+  }
+  @include forwidth(640, 541) {
+    grid-gap: 0.5rem;
+  }
+  @include forwidth(540) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+  }
 }
 
 .featured-item {
@@ -24,6 +34,15 @@
       margin: 1.5rem 0 0;
       &:hover {
         text-decoration: none;
+      }
+    }
+  }
+  @include forwidth(640) {
+    padding: 2rem 1rem;
+    p {
+      margin: 1rem 0 0;
+      a {
+        margin: 1rem 0 0;
       }
     }
   }

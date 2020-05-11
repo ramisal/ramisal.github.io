@@ -21,4 +21,20 @@
     font-family: $base_font;
     font-weight: 400;
   }
+  @include forwidth(640, 361) {
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+  @include forwidth(420) {
+    h1 {
+      line-height: 1;
+      margin: 0 0 0.5rem;
+    }
+  }
+  @include forwidth(360) {
+    h3 {
+      font-size: 1.25rem;
+    }
+  }
 }

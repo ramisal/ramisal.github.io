@@ -3,8 +3,16 @@
 /****************/
 .main-container {
   min-height: 100vh;
-  padding: 6rem 2rem 8rem;
+  padding: 6rem 3rem 8rem;
   position: relative;
+  @include forwidth(720) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  @include forwidth(360) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }
 
 /******************/
@@ -24,6 +32,12 @@
       text-decoration: none;
     }
   }
+  @include forwidth(360) {
+    margin: 3rem -1rem 0;
+    a {
+      margin: 0 0.2rem;
+    }
+  }
 }
 
 /*******************/
@@ -35,5 +49,11 @@
   h5 {
     margin: 0 0 3rem;
     color: $gray_dark;
+  }
+  @include forwidth(360) {
+    margin: 3rem 0 0;
+    h5 {
+      margin: 0 0 2rem;
+    }
   }
 }

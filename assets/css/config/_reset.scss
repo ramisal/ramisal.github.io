@@ -1,4 +1,5 @@
-/***** reset *****/
+@import "mixins";
+
 html,
 body {
   margin: 0;
@@ -9,6 +10,12 @@ body {
   line-height: 1.66;
   color: $base_color;
   background: #fff;
+  @include forwidth(960) {
+    font-size: 20px;
+  }
+  @include forwidth(840) {
+    font-size: 16px;
+  }
 }
 
 * {
