@@ -4,7 +4,7 @@
   "description": "My personal portfolio",
   "main": "index.html",
   "repository": "git@github.com:ramisal/portfolio.git",
-  "author": "demonofthemist <rohan.misal8@gmail.com>",
+  "author": "ramisal",
   "license": "MIT",
   "scripts": {
     "start": "python -m SimpleHTTPServer"
